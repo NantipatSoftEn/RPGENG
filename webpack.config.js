@@ -9,10 +9,7 @@ module.exports = {
   module: {
     rules: [{
       loader: 'babel-loader',
-      query:
-      {
-        presets:['react']
-      },
+      query:{presets:['react']},
       test: /\.js$/,
       exclude: /node_modules/
     }, {
