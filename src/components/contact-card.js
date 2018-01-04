@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 export default function ContactCard({contact, deleteContact}) {
   return (
-    <Card>
+    <Card >
       <Card.Content>
         <Card.Header>
           <Icon name='idea'/> {contact.words}

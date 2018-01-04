@@ -1,9 +1,5 @@
-.error {
-  color: #9f3a38
-}
 
-
-body{
+h1{
   font-family: 'Itim','Indie Flower', cursive;
-
+  color:red;
 }
