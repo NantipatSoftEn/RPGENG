@@ -2,6 +2,7 @@ import React, { Component} from 'react';
 import { connect } from 'react-redux';
 import ContactList from '../components/contact-list';
 import { fetchContacts, deleteContact } from '../actions/contact-actions';
+import { Image } from 'semantic-ui-react';
 
 class ContactListPage extends Component {
 
@@ -12,6 +13,7 @@ class ContactListPage extends Component {
   render() {
     return (
       <div>
+      <Image src='http://localhost:3000/logho.jpg' />
         <h1>List of Contacts</h1>
         <ContactList contacts={this.props.contacts}
         loading={this.props.loading}

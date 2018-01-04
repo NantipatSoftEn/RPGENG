@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
-import { Form, Grid, Button } from 'semantic-ui-react';
+import { Form, Grid, Button,Image } from 'semantic-ui-react';
 import { Field, reduxForm} from 'redux-form';
 import classnames from 'classnames';
 import './contact-form';
+
 const validate = (values) => {
   const errors = {name:{}};
   if(!values.words || !values.words) {
@@ -44,8 +45,10 @@ class ContactForm extends Component {
   render() {
     const { handleSubmit, pristine, submitting, loading, contact } = this.props;
     return (
+
       <Grid centered columns={2}>
         <Grid.Column>
+        <Image src='http://localhost:3000/fucking.jpg' />
           <h1 style={{marginTop:"1em"}}>{contact._id ? 'Edit Contact' : 'Add New Contact'}</h1>
           <Form onSubmit={handleSubmit} loading={loading}>
             <Form.Group widths='equal'>
