@@ -52,7 +52,7 @@ class ContactForm extends Component {
                 <Field name="words" type="text" component={this.renderField} label="Words"/>
             </Form.Group>
             <Form.Group widths='equal'>
-                <Field  name="des" type="text"  component={this.renderField}label="Phone"/>
+                <Field  name="des" type="text"  component={this.renderField}label="Explain"/>
             </Form.Group>
             <Form.Group widths='equal'>
                 <Field name="keyword" type="text" component={this.renderField} label="Keyword"/>
