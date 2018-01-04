@@ -1,10 +1,27 @@
-import React, { Component} from 'react';
-
+import React from 'react';
+import { Image } from 'semantic-ui-react';
+import './home.css';
 const Home = () => (
+  <div>
+    <center>
+      <Image className='ui fluid image' src='http://localhost:3000/logho.jpg' />
+      <div className="ui inverted segment">
 
-    <div>
-    Home
-    </div>
+        <div className="ui  teal inverted statistic">
+        </div>
+
+        <div className="ui yellow inverted statistic">
+          <div className="label">
+          ＲＯＡＤ    ＴＯ    Ｌｖ．９９    ＧａｍｅＳｔａｒｔ  ！！
+
+          </div>
+        </div>
+
+
+
+      </div>
+    </center>
+  </div>
 );
 
 export default Home;
