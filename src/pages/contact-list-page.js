@@ -13,7 +13,10 @@ class ContactListPage extends Component {
     return (
       <div>
         <h1>List of Contacts</h1>
-        <ContactList contacts={this.props.contacts} loading={this.props.loading} errors={this.props.errors} deleteContact={this.props.deleteContact}/>
+        <ContactList contacts={this.props.contacts}
+        loading={this.props.loading}
+        errors={this.props.errors}
+        deleteContact={this.props.deleteContact}/>
       </div>
     )
   }
