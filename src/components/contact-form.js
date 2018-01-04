@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Form, Grid, Button } from 'semantic-ui-react';
-import { Field, reduxForm,textarea } from 'redux-form';
+import { Field, reduxForm } from 'redux-form';
 import classnames from 'classnames';
 
 const validate = (values) => {
@@ -19,31 +19,6 @@ const validate = (values) => {
       message: 'Phone number must be in International format'
     }
   }
-  if(!values.email) {
-    errors.email = {
-      message: 'You need to provide an Email address'
-    }
-  } else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(values.email)) {
-    errors.email = {
-      message: 'Invalid email address'
-    }
-  }
-  return errors;
-}
-
-const validate2 = (values) => {
-  const errors = {name:{}};
-  if(!values.name || !values.name.first) {
-    errors.name.first = {
-      message: 'You need to provide First Name'
-    }
-  }
-  if(!values.phone) {
-    errors.phone = {
-      message: 'You need to provide a Phone number'
-    }
-  }
-  
   if(!values.email) {
     errors.email = {
       message: 'You need to provide an Email address'
@@ -82,9 +57,7 @@ class ContactForm extends Component {
           <Form onSubmit={handleSubmit} loading={loading}>
             <Form.Group widths='equal'>
               <Field name="name.first" type="text" component={this.renderField} label="First Name"/>
-            </Form.Group>
-            <Form.Group widths='equal'>
-                <textarea name="name.last" type="text" component={this.renderField} label="Last Name"/>
+              <Field name="name.last" type="text" component={this.renderField} label="Last Name"/>
             </Form.Group>
             <Field name="phone" type="text" component={this.renderField} label="Phone"/>
             <Field name="email" type="text" component={this.renderField} label="Email"/>
