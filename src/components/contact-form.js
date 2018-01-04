@@ -51,9 +51,12 @@ class ContactForm extends Component {
             <Form.Group widths='equal'>
                 <Field name="words" type="text" component={this.renderField} label="Words"/>
             </Form.Group>
-             <textarea {...input} placeholder="Content" rows="10" cols="40"/>
-            <Field  name="des" type="text"  component={this.renderField}label="Phone"/>
-            <Field name="keyword" type="text" component={this.renderField} label="Keyword"/>
+            <Form.Group widths='equal'>
+                <Field  name="des" type="text"  component={this.renderField}label="Phone"/>
+            </Form.Group>
+            <Form.Group widths='equal'>
+                <Field name="keyword" type="text" component={this.renderField} label="Keyword"/>
+            </Form.Group>
             <Button primary type='submit' disabled={pristine || submitting}>Save</Button>
           </Form>
         </Grid.Column>
