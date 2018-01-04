@@ -7,18 +7,18 @@ const validate = (values) => {
   const errors = {name:{}};
   if(!values.words || !values.words) {
     errors.words = {
-      message: 'You need to provide First Name'
+      message: 'You need to provide Word'
     }
   }
   if(!values.phone) {
     errors.phone = {
-      message: 'You need to provide a Phone number'
+      message: 'You need to provide Explain'
     }
   }
 
   if(!values.email) {
     errors.email = {
-      message: 'You need to provide an Email address'
+      message: 'You need to provide Keyword'
     }
   }
   return errors;
