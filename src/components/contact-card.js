@@ -7,11 +7,11 @@ export default function ContactCard({contact, deleteContact}) {
     <Card>
       <Card.Content>
         <Card.Header>
-          <Icon name='user outline'/> {contact.words}
+          <Icon name='idea'/> {contact.words}
         </Card.Header>
         <Card.Description>
-          <p><Icon name='phone'/> {contact.des}</p>
-          <p><Icon name='mail outline'/> {contact.keyword}</p>
+          <p><Icon name='comment'/> {contact.des}</p>
+          <p><Icon name='tags'/> {contact.keyword}</p>
         </Card.Description>
       </Card.Content>
       <Card.Content extra>
