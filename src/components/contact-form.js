@@ -49,7 +49,7 @@ class ContactForm extends Component {
       <Grid centered columns={2}>
         <Grid.Column>
         <Image src='http://localhost:3000/fucking.jpg' />
-          <h1 style={{marginTop:"1em"}}>{contact._id ? 'Edit Contact' : 'Add New Contact'}</h1>
+          <div style={{marginTop:"1em",fontSize:25,marginBottom:"1em"}}>{contact._id ? 'Edit Contact' : 'Add New Contact'}</div>
           <Form onSubmit={handleSubmit} loading={loading}>
             <Form.Group widths='equal'>
                 <Field name="words" type="text" component={this.renderField} label="Words"/>

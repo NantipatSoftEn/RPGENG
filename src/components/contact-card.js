@@ -6,9 +6,9 @@ export default function ContactCard({contact, deleteContact}) {
   return (
     <Card >
       <Card.Content>
-        <Card.Header>
-          <Icon name='idea'/> {contact.words}
-        </Card.Header>
+          <div  style={{fontSize:25,marginBottom:"1em"}}>
+            <Icon name='idea'/> {contact.words}
+          </div>
         <Card.Description>
           <p><Icon name='comment'/> {contact.des}</p>
           <p><Icon name='tags'/> {contact.keyword}</p>

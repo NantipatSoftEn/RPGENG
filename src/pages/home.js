@@ -1,6 +1,6 @@
 import React from 'react';
 import { Image } from 'semantic-ui-react';
-import './home.css';
+
 const Home = () => (
   <div>
     <center>

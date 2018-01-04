@@ -14,7 +14,7 @@ class ContactListPage extends Component {
     return (
       <div>
 
-        <h1>List of Contacts</h1>
+        <div style={{fontSize:25,marginBottom:"1em"}}>List of Contacts</div>
         <ContactList contacts={this.props.contacts}
         loading={this.props.loading}
         errors={this.props.errors}
