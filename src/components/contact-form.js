@@ -14,20 +14,13 @@ const validate = (values) => {
     errors.phone = {
       message: 'You need to provide a Phone number'
     }
-  } else if(!/^\+(?:[0-9] ?){6,14}[0-9]$/.test(values.phone)) {
-    errors.phone = {
-      message: 'Phone number must be in International format'
-    }
   }
+
   if(!values.email) {
     errors.email = {
       message: 'You need to provide an Email address'
     }
-  } else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(values.email)) {
-    errors.email = {
-      message: 'Invalid email address'
-    }
-  }
+  } 
   return errors;
 }
 
