@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { Form, Grid, Button } from 'semantic-ui-react';
-import { Field, reduxForm } from 'redux-form';
+import { Field, reduxForm} from 'redux-form';
 import classnames from 'classnames';
-
+const  { DOM: { input, select, textarea } } = React
 const validate = (values) => {
   const errors = {name:{}};
   if(!values.words || !values.words) {
@@ -49,11 +49,11 @@ class ContactForm extends Component {
           <h1 style={{marginTop:"1em"}}>{contact._id ? 'Edit Contact' : 'Add New Contact'}</h1>
           <Form onSubmit={handleSubmit} loading={loading}>
             <Form.Group widths='equal'>
-              <Field name="words" type="text" component={this.renderField} label="words"/>
-
+                <Field name="words" type="text" component={this.renderField} label="Words"/>
             </Form.Group>
-            <Field name="phone" type="text" component={this.renderField} label="Phone"/>
-            <Field name="email" type="text" component={this.renderField} label="Email"/>
+             <textarea {...input} placeholder="Content" rows="10" cols="40"/>
+            <Field  name="des" type="text"  component={this.renderField}label="Phone"/>
+            <Field name="keyword" type="text" component={this.renderField} label="Keyword"/>
             <Button primary type='submit' disabled={pristine || submitting}>Save</Button>
           </Form>
         </Grid.Column>

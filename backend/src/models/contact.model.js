@@ -12,11 +12,11 @@ module.exports = function (app) {
         type: String,
         required: [true, 'First Name is required']
       },
-    email : {
+    keyword : {
       type: String,
       required: false
     },
-    phone : {
+    des : {
       type: String,
       required: false
     },
