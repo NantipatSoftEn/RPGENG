@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Form, Grid, Button } from 'semantic-ui-react';
 import { Field, reduxForm} from 'redux-form';
 import classnames from 'classnames';
-const  { DOM: { input, select, textarea } } = React
+
 const validate = (values) => {
   const errors = {name:{}};
   if(!values.words || !values.words) {
