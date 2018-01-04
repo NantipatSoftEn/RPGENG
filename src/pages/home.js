@@ -6,19 +6,11 @@ const Home = () => (
     <center>
       <Image className='ui fluid image' src='http://localhost:3000/logho.jpg' />
       <div className="ui inverted segment">
-
-        <div className="ui  teal inverted statistic">
-        </div>
-
         <div className="ui yellow inverted statistic">
           <div className="label">
           ＲＯＡＤ    ＴＯ    Ｌｖ．９９    ＧａｍｅＳｔａｒｔ  ！！
-
           </div>
         </div>
-
-
-
       </div>
     </center>
   </div>
