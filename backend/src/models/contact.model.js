@@ -8,16 +8,10 @@ require('mongoose-type-email');
 module.exports = function (app) {
   const mongooseClient = app.get('mongooseClient');
   const contact = new mongooseClient.Schema({
-    name : {
-      first: {
+      words: {
         type: String,
         required: [true, 'First Name is required']
       },
-      last: {
-        type: String,
-        required: false
-      }
-    },
     email : {
       type: String,
       required: false

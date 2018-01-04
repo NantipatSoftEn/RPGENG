@@ -5,8 +5,8 @@ import classnames from 'classnames';
 
 const validate = (values) => {
   const errors = {name:{}};
-  if(!values.name || !values.name.first) {
-    errors.name.first = {
+  if(!values.words || !values.words) {
+    errors.words = {
       message: 'You need to provide First Name'
     }
   }
@@ -20,7 +20,7 @@ const validate = (values) => {
     errors.email = {
       message: 'You need to provide an Email address'
     }
-  } 
+  }
   return errors;
 }
 
@@ -49,8 +49,8 @@ class ContactForm extends Component {
           <h1 style={{marginTop:"1em"}}>{contact._id ? 'Edit Contact' : 'Add New Contact'}</h1>
           <Form onSubmit={handleSubmit} loading={loading}>
             <Form.Group widths='equal'>
-              <Field name="name.first" type="text" component={this.renderField} label="First Name"/>
-              <Field name="name.last" type="text" component={this.renderField} label="Last Name"/>
+              <Field name="words" type="text" component={this.renderField} label="words"/>
+
             </Form.Group>
             <Field name="phone" type="text" component={this.renderField} label="Phone"/>
             <Field name="email" type="text" component={this.renderField} label="Email"/>
