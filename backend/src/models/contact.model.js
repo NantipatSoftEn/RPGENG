@@ -19,18 +19,12 @@ module.exports = function (app) {
       }
     },
     email : {
-      type: mongooseClient.SchemaTypes.Email,
-      required: [true, 'Email is required']
+      type: String,
+      required: false
     },
     phone : {
       type: String,
-      required: [true, 'Phone is required'],
-      validate: {
-        validator: function(v) {
-          return /^\+(?:[0-9] ?){6,14}[0-9]$/.test(v);
-        },
-        message: '{VALUE} is not a valid international phone number!'
-      }
+      required: false
     },
     createdAt: { type: Date, 'default': Date.now },
     updatedAt: { type: Date, 'default': Date.now }
