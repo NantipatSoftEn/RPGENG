@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Form, Grid, Button } from 'semantic-ui-react';
-import { Field, reduxForm } from 'redux-form';
+import { Field, reduxForm,textarea } from 'redux-form';
 import classnames from 'classnames';
 
 const validate = (values) => {
@@ -54,13 +54,14 @@ class ContactForm extends Component {
       <Grid centered columns={2}>
         <Grid.Column>
           <h1 style={{marginTop:"1em"}}>{contact._id ? 'Edit Contact' : 'Add New Contact'}</h1>
+
+
           <Form onSubmit={handleSubmit} loading={loading}>
             <Form.Group widths='equal'>
-              <Field name="name.first" type="text" component={this.renderField} label="First Name"/>
-              <Field name="name.last" type="text" component={this.renderField} label="Last Name"/>
+              <Field name="vocabulary" type="text" component={this.renderField} label="Vocabulary"/>
             </Form.Group>
-            <Field name="phone" type="text" component={this.renderField} label="Phone"/>
-            <Field name="email" type="text" component={this.renderField} label="Email"/>
+            <textarea name="des"  component={this.renderField} />
+            <Field name="keyword" type="text" component={this.renderField} label="Keyword"/>
             <Button primary type='submit' disabled={pristine || submitting}>Save</Button>
           </Form>
         </Grid.Column>
