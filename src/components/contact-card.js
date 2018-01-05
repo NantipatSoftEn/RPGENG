@@ -1,10 +1,10 @@
 import React from 'react';
-import { Card, Button, Icon,Image } from 'semantic-ui-react'
+import { Card, Button,Image } from 'semantic-ui-react'
 import { Link } from 'react-router-dom';
 
 
 export default function ContactCard({contact, deleteContact}) {
-  let rand = Math.floor(Math.random() * 28); 
+  let rand = Math.floor(Math.random() * 121);
   return (
     <Card >
       <Card.Content>
@@ -12,14 +12,14 @@ export default function ContactCard({contact, deleteContact}) {
                 <Image src={"http://localhost:3000/randomitem/item ("+ rand +").gif"} width="25" height="25"/> {contact.words}
           </div>
         <Card.Description>
-          <p><Icon name='comment'/> {contact.des}</p>
-          <p><Icon name='tags'/> {contact.keyword}</p>
+          <p> <Image src={"http://localhost:3000/611.gif"} width="25" height="25"/> &nbsp;{contact.des}</p>
+          <p><Image src={"http://localhost:3000/15403698.png"} width="25" height="25"/> &nbsp;{contact.keyword}</p>
         </Card.Description>
       </Card.Content>
       <Card.Content extra>
         <div className="ui two buttons">
-          <Link to={`/contacts/edit/${contact._id}`} className="ui basic button green">Edit</Link>
-          <Button basic color="red" onClick={() => deleteContact(contact._id)} >Delete</Button>
+          <Link to={`/contacts/edit/${contact._id}`} className="ui basic button green">﻿Ｅｄｉｔ</Link>
+          <Button basic color="red" onClick={() => deleteContact(contact._id)} >﻿Ｄｅｌｅｔｅ</Button>
         </div>
       </Card.Content>
     </Card>
