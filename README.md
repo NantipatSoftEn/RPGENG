@@ -37,7 +37,7 @@ This will run the backend server at localhost:3030. If all is working well, you 
 Open a separate terminal to start the client:
 
 ```bash
-cd react-contact-manager
+cd RPGENG
 npm start
 ```
 
