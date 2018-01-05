@@ -24,12 +24,11 @@ class App extends Component {
         <Route path="/contacts/home" component={Home}/>
         <Route path="/contacts/new" component={ContactFormPage}/>
         <Route path="/contacts/edit/:_id" component={ContactFormPage}/>
-
           <div style={{marginTop:"2em",textAlign:"center"}} className="ui container " >
               Nantipat Software Engineer PSU . GNU LICENSE
               05/01/2018.
           </div>
-    
+
       </Container>
     );
   }
