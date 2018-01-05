@@ -1,13 +1,15 @@
 import React from 'react';
-import { Card, Button, Icon } from 'semantic-ui-react'
+import { Card, Button, Icon,Image } from 'semantic-ui-react'
 import { Link } from 'react-router-dom';
 
+
 export default function ContactCard({contact, deleteContact}) {
+  let rand = Math.floor(Math.random() * 28); 
   return (
     <Card >
       <Card.Content>
           <div  style={{fontSize:25,marginBottom:"1em"}}>
-            <Icon name='idea'/> {contact.words}
+                <Image src={"http://localhost:3000/randomitem/item ("+ rand +").gif"} width="25" height="25"/> {contact.words}
           </div>
         <Card.Description>
           <p><Icon name='comment'/> {contact.des}</p>
