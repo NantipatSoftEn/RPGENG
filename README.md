@@ -1,13 +1,15 @@
-# REDUX CRUD EXAMPLE
+## ﻿ＰＲＥＶＩＥＷ
 
-This a basic crud react-redux-featherjs application for managing contacts. It currently uses MongoDB for the database and FeathersJS for the REST API server. 
+![Alt text](/preview/pre1.jpg)
 
-https://www.sitepoint.com/crud-app-react-redux-feathersjs/
+![Alt text](/preview/pre2.jpg)
+
+![Alt text](/preview/pre3.jpg)
+
 
 ##  How to install
 
 ```bash
-git clone git@github.com:brandiqa/redux-crud-example.git
 cd react-contact-manager
 
 # Install frontend dependencies
