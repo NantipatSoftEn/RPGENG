@@ -8,18 +8,18 @@ const validate = (values) => {
   const errors = {name:{}};
   if(!values.words || !values.words) {
     errors.words = {
-      message: 'You need to provide Word'
+      message: 'You need to Fucking provide Word'
     }
   }
-  if(!values.phone) {
+  if(!values.des) {
     errors.phone = {
-      message: 'You need to provide Explain'
+      message: 'You need to Fucking provide Explain'
     }
   }
 
-  if(!values.email) {
+  if(!values.keyword) {
     errors.email = {
-      message: 'You need to provide Keyword'
+      message: 'You need to Fucking provide Keyword'
     }
   }
   return errors;
@@ -59,6 +59,9 @@ class ContactForm extends Component {
             </Form.Group>
             <Form.Group widths='equal'>
                 <Field name="keyword" type="text" component={this.renderField} label="Keyword"/>
+            </Form.Group>
+            <Form.Group widths='equal'>
+                <Field name="exam" type="text" component={this.renderField} label="Exam"/>
             </Form.Group>
             <Button primary type='submit' disabled={pristine || submitting}>Save</Button>
           </Form>

@@ -20,6 +20,10 @@ module.exports = function (app) {
       type: String,
       required: false
     },
+    exam : {
+      type: String,
+      required: false
+    },
     createdAt: { type: Date, 'default': Date.now },
     updatedAt: { type: Date, 'default': Date.now }
   });

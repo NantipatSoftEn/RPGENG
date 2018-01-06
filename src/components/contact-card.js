@@ -14,6 +14,7 @@ export default function ContactCard({contact, deleteContact}) {
         <Card.Description>
           <p> <Image src={"http://localhost:3000/611.gif"} width="25" height="25"/> &nbsp;{contact.des}</p>
           <p><Image src={"http://localhost:3000/15403698.png"} width="25" height="25"/> &nbsp;{contact.keyword}</p>
+          <p><Image src={"http://localhost:3000/nv_basic.gif"} width="25" height="25"/> &nbsp;{contact.exam}</p>
         </Card.Description>
       </Card.Content>
       <Card.Content extra>
