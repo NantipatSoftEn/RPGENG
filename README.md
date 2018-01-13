@@ -10,7 +10,7 @@
 ##  How to install
 
 ```bash
-cd react-contact-manager
+cd rpgend
 
 # Install frontend dependencies
 npm install
